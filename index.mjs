@@ -3,7 +3,7 @@
 import http from "http";
 
 // prettier-ignore
-http.createServer(async (req, res) => {
+const app = http.createServer(async (req, res) => {
   const path = req.url?.split("?")?.[0] || "";
   res.setHeader("Content-Type", "text/html");
   if (req.url === "/ping") {
@@ -17,3 +17,5 @@ http.createServer(async (req, res) => {
     res.end("404 Not Found");
   }
 }).listen(8080);
+
+export default app;
