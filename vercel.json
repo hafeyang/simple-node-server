@@ -8,14 +8,12 @@
   ],
   "routes": [
     {
+      "src": "/api/(?<path>.*)",
+      "dest": "https://dev.dex2.xyz/api/:path"
+    },
+    {
       "src": "/(.*)",
       "dest": "index.js"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/api/:match*",
-      "destination": "https://dev.dex2.xyz/:match*"
     }
   ]
 }
