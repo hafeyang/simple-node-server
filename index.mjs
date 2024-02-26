@@ -10,7 +10,7 @@ const app = http.createServer(async (req, res) => {
     res.write("pong");
     res.end();
   } else if (req.method === "GET") {
-    res.write("hello"),
+    res.write("hello mjs"),
     res.end();
   } else {
     res.writeHead(404);
