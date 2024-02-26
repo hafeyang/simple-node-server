@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "installCommand":"mv package.test.json package.json && npm i",
   "builds": [
     {
       "src": "index.js",
@@ -11,6 +10,12 @@
     {
       "src": "/(.*)",
       "dest": "index.js"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "https://dev.dex2.xyz/:match*"
     }
   ]
 }

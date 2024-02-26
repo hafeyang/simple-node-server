@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "echo \"prepare\" && exit 0",
+    "build": "echo \"building\" && exit 0"
   },
   "keywords": [],
   "author": "",
